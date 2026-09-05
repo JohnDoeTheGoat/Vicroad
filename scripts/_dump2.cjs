@@ -1,0 +1,11 @@
+const fs = require('fs');
+const s = fs.readFileSync(require('path').join(__dirname, '../yhrznifOvvzQ.app/assets/index-CpHhEkhB.js'), 'utf8');
+const h = fs.readFileSync(require('path').join(__dirname, '../index.html'), 'utf8');
+const i = s.indexOf('licenceDetail")return');
+console.log('LICENCE:\n', s.slice(i, i + 650));
+const j = s.indexOf('j=()=>{');
+console.log('\nJ:\n', s.slice(j, j + 280));
+const k = s.indexOf('Ee=({active');
+console.log('\nNAV:\n', s.slice(k, k + 1400));
+const n = h.indexOf('vr-nav-home');
+console.log('\nNAV SCRIPT:\n', h.slice(n, n + 800));
